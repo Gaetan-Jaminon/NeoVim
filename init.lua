@@ -1,7 +1,7 @@
 -- Define the path for Lazy.nvim within the Neovim configuration folder (~/.config/nvim/lazy/lazy.nvim)
 -- This ensures Lazy.nvim is stored within the Neovim config instead of the default data path
 local lazypath = vim.fn.stdpath("config") .. "/lazy/lazy.nvim"
------ 
+-- 
 -- Check if Lazy.nvim is not already installed at the defined path
 if not vim.loop.fs_stat(lazypath) then
   -- Clone Lazy.nvim from GitHub if it's not present in the path
