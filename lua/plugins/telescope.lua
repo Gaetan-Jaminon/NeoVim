@@ -25,7 +25,9 @@ return {
       vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})  -- Map <leader>fg to live grep for text in files
 
       -- Load the ui-select extension for enhanced UI selection capabilities
-      require("telescope").load_extension("ui-select")
+      local telescope = require("telescope")
+      telescope.load_extension("ui-select")
+      telescope.load_extension('lazygit')
     end
   },
   {
